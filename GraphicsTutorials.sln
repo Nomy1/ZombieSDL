@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GraphicsTutorials", "GraphicsTutorials\GraphicsTutorials.vcxproj", "{2AE4024F-DC7E-4472-969E-388EEFF6CCCA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B822C1FA-FD52-4CA1-964B-2FB637E42EAB} = {B822C1FA-FD52-4CA1-964B-2FB637E42EAB}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TracerEngine", "TracerEngine\TracerEngine.vcxproj", "{B822C1FA-FD52-4CA1-964B-2FB637E42EAB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Zombie", "Zombie\Zombie.vcxproj", "{9502A78D-8805-44B9-A563-EB624247C857}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B822C1FA-FD52-4CA1-964B-2FB637E42EAB} = {B822C1FA-FD52-4CA1-964B-2FB637E42EAB}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AE4024F-DC7E-4472-969E-388EEFF6CCCA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2AE4024F-DC7E-4472-969E-388EEFF6CCCA}.Debug|Win32.Build.0 = Debug|Win32
+		{2AE4024F-DC7E-4472-969E-388EEFF6CCCA}.Release|Win32.ActiveCfg = Release|Win32
+		{2AE4024F-DC7E-4472-969E-388EEFF6CCCA}.Release|Win32.Build.0 = Release|Win32
+		{B822C1FA-FD52-4CA1-964B-2FB637E42EAB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B822C1FA-FD52-4CA1-964B-2FB637E42EAB}.Debug|Win32.Build.0 = Debug|Win32
+		{B822C1FA-FD52-4CA1-964B-2FB637E42EAB}.Release|Win32.ActiveCfg = Release|Win32
+		{B822C1FA-FD52-4CA1-964B-2FB637E42EAB}.Release|Win32.Build.0 = Release|Win32
+		{9502A78D-8805-44B9-A563-EB624247C857}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9502A78D-8805-44B9-A563-EB624247C857}.Debug|Win32.Build.0 = Debug|Win32
+		{9502A78D-8805-44B9-A563-EB624247C857}.Release|Win32.ActiveCfg = Release|Win32
+		{9502A78D-8805-44B9-A563-EB624247C857}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

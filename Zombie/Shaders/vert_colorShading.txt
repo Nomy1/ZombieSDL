@@ -1,0 +1,22 @@
+#version 130
+
+in vec2 vVertex;
+in vec2 vTexCoord;
+in vec4 vColor;
+
+out vec4 v2fColor;
+out vec2 v2fPos;
+out vec2 v2fTexCoord;
+
+uniform mat4 cameraMatrix;
+
+void main()
+{
+	gl_Position.xy = (cameraMatrix * vec4(vVertex, 0.0, 1.0)).xy;
+	gl_Position.z = 0.0;
+	gl_Position.w = 1.0;
+
+	v2fColor = vColor;
+	v2fTexCoord = vec2(vTexCoord.x, 1-vTexCoord.y);
+	v2fPos = vVertex;
+}

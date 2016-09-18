@@ -1,0 +1,16 @@
+#version 130
+
+in vec4 v2fColor;
+in vec2 v2fTexCoord;
+in vec2 v2fPos;
+
+out vec4 color;
+
+//uniform float time;
+uniform sampler2D mySampler;
+
+void main()
+{
+	vec4 texColor = texture(mySampler, v2fTexCoord);
+	color = texColor * v2fColor;
+}
